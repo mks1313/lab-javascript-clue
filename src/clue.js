@@ -180,14 +180,15 @@ return junts;
 
 // ITERATION 3
 
-function revealMystery(sospecha, armas, habs) {
-  return '${sospecha} killed Mr. Boddy using the ${armas} in the ${habs}!';
-     
+function revealMystery(envelop) {
+    const { suspect, weapon, room } = envelop;
+  return `${suspect.firstName} ${suspect.lastName} killed Mr. Boddy using the ${weapon.name} in the ${room.name}!`;
 }
-let sospecha = suspectsArray;
-let armas = weaponsArray;
-let habs = roomsArray;
-let result = revealMystery;
-console.log(revealMystery);
+
+// let sospecha = suspectsArray;
+// let armas = weaponsArray;
+// let habs = roomsArray;
+// let result = revealMystery;
+
 
 
